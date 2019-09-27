@@ -1,0 +1,74 @@
+body{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+
+.container-div{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 10px;
+}
+
+.container-div > div{
+    position: relative;
+    background-color: grey;
+    padding:0 20px 20px;
+}
+
+.menu-tab{
+    text-align: right;
+}
+
+.menu-tab span{
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.tab-1 span{
+    background-color: pink;
+}
+
+
+.tab-2 span{
+    background-color: red;
+}
+
+.tab-3 span{
+    background-color: yellow;
+}
+
+/* Browser View */
+@media (min-width: 992px){
+    .col-lg-4{
+        grid-column: span 4;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6{
+        grid-column: span 6;
+    }
+
+    .col-md-12{
+        grid-column: span 12;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px){
+    .col-sm-12{
+        grid-column: span 12;
+        margin-bottom: 10px;
+    }
+}
